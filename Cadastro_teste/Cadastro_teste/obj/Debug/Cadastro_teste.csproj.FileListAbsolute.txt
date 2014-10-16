@@ -7,3 +7,12 @@ c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_test
 c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.exe
 c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.pdb
 c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.frm_CRUD.resources
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.exe.config
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.exe
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.pdb
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.exe
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.pdb
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.csprojResolveAssemblyReference.cache
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.frm_CRUD.resources
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.Properties.Resources.resources
+C:\Users\Misa\Documents\GitHub\Gerenciador_de_Alunos\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.csproj.GenerateResource.Cache

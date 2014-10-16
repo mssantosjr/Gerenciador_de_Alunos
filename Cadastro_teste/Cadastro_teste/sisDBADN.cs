@@ -255,6 +255,86 @@ namespace Cadastro_teste
             
         }
         #endregion
+
+        public List<string> listaUF()
+        {
+            vsql = "SELECT UF FROM ESTADO";
+
+            SqlCommand objcmd = null;
+
+            List<string> uf = new List<string>();//como um array list(recebe qualquer coisa)
+
+            if (this.conectar())
+            {
+                try
+                {
+                    objcmd = new SqlCommand(vsql, objCon);
+                    SqlDataReader dr = objcmd.ExecuteReader();//executa leitura no sql
+
+                    while(dr.Read())
+                    {
+                        uf.Add(dr["UF"].ToString());//
+                    }
+                    
+                    return uf;
+                }
+                catch (SqlException sqlerr)
+                {
+                    throw sqlerr;
+
+                }
+                finally
+                {
+                    this.desconectar();
+                }
+
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+        public List<string> listaCidade(string uf)
+        {
+            vsql = "SELECT NOME FROM CIDADE WHERE UF = @UF";//@UF = uf
+
+            SqlCommand objcmd = null;
+
+            List<string> cidade = new List<string>();//como um array list(recebe qualquer coisa)
+
+            if (this.conectar())
+            {
+                try
+                {
+                    objcmd = new SqlCommand(vsql, objCon);
+                    objcmd.Parameters.AddWithValue("@UF", uf);
+                    SqlDataReader dr = objcmd.ExecuteReader();//executa leitura no sql
+
+                    while (dr.Read())
+                    {
+                        cidade.Add(dr["NOME"].ToString());//
+                    }
+
+                    return cidade;
+                }
+                catch (SqlException sqlerr)
+                {
+                    throw sqlerr;
+
+                }
+                finally
+                {
+                    this.desconectar();
+                }
+
+            }
+            else
+            {
+                return null;
+            }
+        }
     
     }
 }

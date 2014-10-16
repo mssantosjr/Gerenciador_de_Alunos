@@ -94,7 +94,6 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lbTime = new System.Windows.Forms.ToolStripStatusLabel();
@@ -183,22 +182,19 @@
             // cbCidadeCad
             // 
             this.cbCidadeCad.FormattingEnabled = true;
-            this.cbCidadeCad.Location = new System.Drawing.Point(335, 180);
+            this.cbCidadeCad.Location = new System.Drawing.Point(349, 180);
             this.cbCidadeCad.Name = "cbCidadeCad";
-            this.cbCidadeCad.Size = new System.Drawing.Size(141, 24);
+            this.cbCidadeCad.Size = new System.Drawing.Size(127, 24);
             this.cbCidadeCad.TabIndex = 19;
             // 
             // cbUfCad
             // 
             this.cbUfCad.FormattingEnabled = true;
-            this.cbUfCad.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03"});
             this.cbUfCad.Location = new System.Drawing.Point(294, 180);
             this.cbUfCad.Name = "cbUfCad";
-            this.cbUfCad.Size = new System.Drawing.Size(35, 24);
+            this.cbUfCad.Size = new System.Drawing.Size(49, 24);
             this.cbUfCad.TabIndex = 18;
+            this.cbUfCad.SelectedIndexChanged += new System.EventHandler(this.cbUfCad_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -231,7 +227,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(332, 157);
+            this.label8.Location = new System.Drawing.Point(346, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 16);
             this.label8.TabIndex = 14;
@@ -406,9 +402,9 @@
             // cbEditCidade
             // 
             this.cbEditCidade.FormattingEnabled = true;
-            this.cbEditCidade.Location = new System.Drawing.Point(370, 90);
+            this.cbEditCidade.Location = new System.Drawing.Point(382, 90);
             this.cbEditCidade.Name = "cbEditCidade";
-            this.cbEditCidade.Size = new System.Drawing.Size(153, 24);
+            this.cbEditCidade.Size = new System.Drawing.Size(141, 24);
             this.cbEditCidade.TabIndex = 34;
             // 
             // cbEditUF
@@ -420,8 +416,9 @@
             "03"});
             this.cbEditUF.Location = new System.Drawing.Point(329, 90);
             this.cbEditUF.Name = "cbEditUF";
-            this.cbEditUF.Size = new System.Drawing.Size(35, 24);
+            this.cbEditUF.Size = new System.Drawing.Size(47, 24);
             this.cbEditUF.TabIndex = 33;
+            this.cbEditUF.SelectedIndexChanged += new System.EventHandler(this.cbEditUF_SelectedIndexChanged);
             // 
             // label18
             // 
@@ -437,7 +434,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(367, 65);
+            this.label19.Location = new System.Drawing.Point(379, 65);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(45, 16);
             this.label19.TabIndex = 31;
@@ -666,7 +663,7 @@
             // 
             this.rbPorNome.AutoSize = true;
             this.rbPorNome.Checked = true;
-            this.rbPorNome.Location = new System.Drawing.Point(41, 21);
+            this.rbPorNome.Location = new System.Drawing.Point(17, 21);
             this.rbPorNome.Name = "rbPorNome";
             this.rbPorNome.Size = new System.Drawing.Size(77, 20);
             this.rbPorNome.TabIndex = 6;
@@ -677,7 +674,7 @@
             // rbPorCodigo
             // 
             this.rbPorCodigo.AutoSize = true;
-            this.rbPorCodigo.Location = new System.Drawing.Point(41, 47);
+            this.rbPorCodigo.Location = new System.Drawing.Point(17, 47);
             this.rbPorCodigo.Name = "rbPorCodigo";
             this.rbPorCodigo.Size = new System.Drawing.Size(86, 20);
             this.rbPorCodigo.TabIndex = 8;
@@ -732,7 +729,6 @@
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripSeparator1,
-            this.toolStripButton4,
             this.toolStripButton5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 19);
             this.toolStrip1.Name = "toolStrip1";
@@ -747,7 +743,7 @@
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Text = "Salvar";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
@@ -757,7 +753,7 @@
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.Text = "Atualizar";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
@@ -767,22 +763,13 @@
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.Text = "Excluir";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton4.Text = "toolStripButton4";
             // 
             // toolStripButton5
             // 
@@ -792,7 +779,7 @@
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton5.Text = "toolStripButton5";
+            this.toolStripButton5.Text = "Sair";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // statusStrip1
@@ -877,7 +864,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.DataGridView dtAdicionar;
         private System.Windows.Forms.DataGridView dtEditar;

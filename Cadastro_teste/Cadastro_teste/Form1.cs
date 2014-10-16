@@ -133,12 +133,15 @@ namespace Cadastro_teste
 
         private void tabPage1_Enter(object sender, EventArgs e)
         {
-
+            sisDBADN obj = new sisDBADN();
+            cbUfCad.DataSource = obj.listaUF();
+            cbUfCad.DisplayMember = "UF";
         } 
 
         private void tabPage2_Enter(object sender, EventArgs e) 
         {
             sisDBADN obj = new sisDBADN();
+            cbEditUF.DataSource = obj.listaUF();
             dtEditar.DataSource = obj.ListaGrid();
 
 
@@ -193,6 +196,22 @@ namespace Cadastro_teste
         private void dtAdicionar_Enter(object sender, EventArgs e)
         {
 
-        }  
+        }
+
+        private void cbUfCad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sisDBADN obj = new sisDBADN();
+            cbCidadeCad.DataSource = obj.listaCidade(cbUfCad.Text);
+            cbCidadeCad.DisplayMember = "NOME";
+        }
+
+        private void cbEditUF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sisDBADN obj = new sisDBADN();
+            cbEditCidade.DataSource = obj.listaCidade(cbEditUF.Text);
+            cbEditCidade.DisplayMember = "NOME";
+        }
+
+        
     }
 }
