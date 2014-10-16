@@ -1,0 +1,9 @@
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.exe.config
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.exe
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\bin\Debug\Cadastro_teste.pdb
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.csprojResolveAssemblyReference.cache
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.Properties.Resources.resources
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.csproj.GenerateResource.Cache
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.exe
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.pdb
+c:\users\misa\documents\visual studio 2013\Projects\Cadastro_teste\Cadastro_teste\obj\Debug\Cadastro_teste.frm_CRUD.resources
